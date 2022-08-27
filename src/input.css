@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+.main-btn{
+    @apply bg-teal-500 2xl:text-lg text-white py-3 px-7 2xl:py-4 2xl:px-8 rounded-full shadow-md hover:bg-teal-600 transition duration-200 focus:ring-slate-400 focus:ring focus:outline-none
+}
+
+.menu-active{
+    color: rgb(19, 18, 18);
+}
+
+.menuSlide{
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: .3s ease-in-out;
+}
+
+.menuSlide.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: .3s ease-in-out;
+}
+
+.heading{
+    @apply text-2xl lg:text-5xl font-semibold
+}
